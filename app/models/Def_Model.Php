@@ -31,7 +31,7 @@ class Def_model{
 
 	public function addNewData($data, $pics){
 
-		$query = "INSERT INTO def VALUES('', :username, :contact, :email, :pics, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
+		$query = "INSERT INTO def VALUES(null, :username, :contact, :email, :pics, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
 		
 		$this->db->query($query);		
 
